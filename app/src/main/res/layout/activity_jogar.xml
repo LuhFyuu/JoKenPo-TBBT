@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogarActivity"
+    android:background="@color/gray">
+
+    <ImageView
+        android:id="@+id/imgKripke"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_kripke"
+        app:layout_constraintEnd_toStartOf="@+id/imgResultKripke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgResultKripke"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/interrogacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgKripke"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bazinga!"
+        android:textColor="@color/red"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgKripke" />
+
+    <ImageView
+        android:id="@+id/imgResultJogador"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/interrogacao"
+        app:layout_constraintEnd_toStartOf="@+id/imgResultSimbolo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtResultado" />
+
+    <ImageView
+        android:id="@+id/imgResultSimbolo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/interrogacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgResultJogador"
+        app:layout_constraintTop_toBottomOf="@id/txtResultado" />
+
+    <TextView
+        android:id="@+id/txtEscolhaPersonagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1. Escolha seu Personagem:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgResultJogador" />
+
+    <ImageView
+        android:id="@+id/imgSheldon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_sheldon"
+        app:layout_constraintEnd_toStartOf="@id/imgLeoanrd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtEscolhaPersonagem" />
+
+    <ImageView
+        android:id="@+id/imgLeoanrd"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_leonard"
+        app:layout_constraintEnd_toStartOf="@id/imgAmy"
+        app:layout_constraintStart_toEndOf="@id/imgSheldon"
+        app:layout_constraintTop_toBottomOf="@id/txtEscolhaPersonagem" />
+
+    <ImageView
+        android:id="@+id/imgAmy"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_amy"
+        app:layout_constraintEnd_toStartOf="@id/imgPenny"
+        app:layout_constraintStart_toEndOf="@id/imgLeoanrd"
+        app:layout_constraintTop_toBottomOf="@id/txtEscolhaPersonagem" />
+
+    <ImageView
+        android:id="@+id/imgPenny"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_penny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgAmy"
+        app:layout_constraintTop_toBottomOf="@id/txtEscolhaPersonagem" />
+
+    <TextView
+        android:id="@+id/txtEscolhaArma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="2. Escolha sua Arma:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgSheldon" />
+
+    <ImageView
+        android:id="@+id/imgPedra"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_pedra_um"
+        app:layout_constraintEnd_toStartOf="@id/imgPapel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtEscolhaArma" />
+
+    <ImageView
+        android:id="@+id/imgPapel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_papel"
+        app:layout_constraintEnd_toStartOf="@id/imgTesoura"
+        app:layout_constraintStart_toEndOf="@id/imgPedra"
+        app:layout_constraintTop_toBottomOf="@id/txtEscolhaArma" />
+
+    <ImageView
+        android:id="@+id/imgTesoura"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_tesoura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgPapel"
+        app:layout_constraintTop_toBottomOf="@id/txtEscolhaArma" />
+
+    <ImageView
+        android:id="@+id/imgLagarto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_lagarto"
+        app:layout_constraintEnd_toStartOf="@id/imgSpock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPapel" />
+
+    <ImageView
+        android:id="@+id/imgSpock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_spock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgLagarto"
+        app:layout_constraintTop_toBottomOf="@id/imgPapel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
